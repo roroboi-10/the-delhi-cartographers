@@ -4,8 +4,11 @@
     <title>Delhi Cartographers</title>
     <!--link  to font>
 
-    <link to style sheet-->
+      <link to style sheet-->
       <link rel="stylesheet" href="main.css">
+
+      <!--link to mapbox gl script-->
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
 
 	<!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
     <!--[if lt IE 9]>
@@ -50,10 +53,20 @@
 
 	<!-- map comes here lad-->
 	<div class="column" id="column_2">
-		<p> The map's supposed to be here, laddies. </p>
-     </div>
-    </section>
-    </main>
+		<!--<p> The map's supposed to be here, laddies. </p> -->
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoicm9yb21hbiIsImEiOiJjazllZXlhcjIwMTlpM29tdWRpdjUzNzZ4In0.c-dn-c8IXXdyH1ERc1jJgQ';
+      var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/roroman/ck9f2aivh09tz1ik6q58ayem8', // stylesheet url
+      center: [77.1, 28.7], // starting position [lng, lat] (Set for Delhi for now)
+      zoom: 9 // starting zoom
+      });
+    </script>
+  </div>
+  </section>
+  </main>
 
 	<!-- Footer-->
     <div>
