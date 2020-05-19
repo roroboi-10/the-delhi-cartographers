@@ -1,42 +1,44 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Delhi Cartographers</title>
+    <title>Delhi Cart</title>
     <!--link  to font>
-
-      <link to style sheet-->
-      <link rel="stylesheet" href="main.css">
-
-      <!--link to mapbox gl script-->
-      <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
-
+	
+    <link to sstyle sheet-->
+      <link rel="stylesheet" href="assets/css/main.css">
+	  
 	<!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-
+    
     <body>
      <!-- Here is our main header that is used across all the pages of our website -->
-
+      
         <div class="nav">
         <nav>
-         <a href="#default" class="logo">CompanyLogo</a>
-			<div class="header-right">
-				<a class="active" href="#home">Home</a>
-				<a href="#contact">Contact</a>
-				<a href="#about">About</a>
+			<!-- Logo Image-->
+			<div class='logo-block'>
+			<img class="logo" src="Delhi Cartography/images/gps.png" />
 			</div>
-        </div>
+				<!--Navigation Buttons-->	
+				<div class="header-right">
+					<a class="active" href="#home">Home</a>
+					<a href="#contact">Contact</a>
+					<a href="#about">About</a>
+				</div>
 		</nav>
-
+		</div>
+	</body>
+	
 	<!-- Here is our page's main content -->
-
+    
 	<!-- Heading of the website-->
 	<main>
 	<div class="head-main">
-		<h1 class="head1" id="heading1"> DELHI CART</h1>
+		<h1 class="head1" id="heading1"> DELHI CARTOGRAPHY</h1>
 	</div>
-
+	
 	<!--Para and map-->
 	<!-- first section -->
 	<div class="row">
@@ -44,32 +46,25 @@
 			<p id="para1">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at sodales sem, ac hendrerit turpis. Proin luctus eget justo vitae porta. Vestibulum suscipit consequat ante, euismod fringilla magna consectetur consequat. Nam enim metus, consectetur non consectetur vitae, accumsan id mauris. Duis velit felis, porta nec scelerisque eu, aliquet eu lorem. Integer porta, ipsum at malesuada consectetur, tellus felis condimentum est, posuere rutrum libero nibh eget ipsum. Aenean finibus eros eu vehicula sagittis. Ut felis ligula, interdum in justo non, venenatis placerat lorem. Fusce gravida, augue sit amet faucibus pharetra, ipsum erat consectetur diam, sit amet pellentesque purus dolor non erat.
 			</p>
+			<p id="para2">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at sodales sem, ac hendrerit turpis. Proin luctus eget justo vitae porta. Vestibulum suscipit consequat ante, euismod fringilla magna consectetur consequat. Nam enim metus, consectetur non consectetur vitae, accumsan id mauris. Duis velit felis, porta nec scelerisque eu, aliquet eu lorem. Integer porta, ipsum at malesuada consectetur, tellus felis condimentum est, posuere rutrum libero nibh eget ipsum. Aenean finibus eros eu vehicula sagittis. Ut felis ligula, interdum in justo non, venenatis placerat lorem. Fusce gravida, augue sit amet faucibus pharetra, ipsum erat consectetur diam, sit amet pellentesque purus dolor non erat
+			</P> 
 			 <h3> Search bar</h3>
 			<form class="search-bar">
 			<input type="search" name="q" placeholder="Search query">
 			<input type="submit" value="Go!">
 			</form>
-		</div>
-
-	<!-- map comes here lad-->
-	<div class="column" id="column_2">
-		<!--<p> The map's supposed to be here, laddies. </p> -->
-    <div id="map"></div>
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1Ijoicm9yb21hbiIsImEiOiJjazllZXlhcjIwMTlpM29tdWRpdjUzNzZ4In0.c-dn-c8IXXdyH1ERc1jJgQ';
-      var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/roroman/ck9f2aivh09tz1ik6q58ayem8', // stylesheet url
-      center: [77.1, 28.7], // starting position [lng, lat] (Set for Delhi for now)
-      zoom: 9 // starting zoom
-      });
-    </script>
-  </div>
-  </section>
-  </main>
-
+		</div>	
+      
+	<!-- map comes here lad--> 
+	<div class="column" id="column_2"> 
+		<p> this is just placeholder text </p>
+     </div> 
+    </section>  
+    </main>
+    
 	<!-- Footer-->
-    <div>
+    <div>  
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
