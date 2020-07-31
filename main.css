@@ -1,107 +1,57 @@
-
-/* navigation class*/
-nav
-{ overflow:fixed;
-background-color:#cf1db7;
-padding: 30px 20px;
-}
-
-/*logo class*/
-logo{
-	width:20vh;
-	height:90vh;
-}
-
-/* header right class whithin nav*/
-.header-right{
-	float:right;
-	height:90vh;
-}
-
-/* nav hyperlinks */
-.header-right a.active {
-  background-color:transparent;
-  color: white;
-}
-
-.nav a{
-   float:clear;
-  color: white;
-  text-align: top;
-  padding: 12px 8px 0px 8px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-.nav a:hover{
-	background-color: #ddd;
-	color: black;	
-}
-
-/* Heading under Head-main*/
-.head-main{
-	width:100%;
-	height:30%;
-	background-color:pink;
-	position:relative;
-}
-
-.head1{
+body{
+	padding:0;
 	margin:0;
-	color:black;
-	font:ariel;
-	font-size:40px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-right:-50%;
-	transform: translate(-50%,50%);
+	background:rgb(242,246,233);
+}
+
+<!-- navigation bar-->
+
+	<!-- navbar links-->
+	.navbar-custom{
+		background-color:black;
+	}
 	
-}
-
-/* paragraph under row class*/
-
-.row {
-  display: flex;
-}
-
-.column{
-  width:400px;
-  height:100px;
-}
-.para {
-	font-size:large;
-	  text-align:justify;  /* For Edge */
-text-align-last:justify;
-}
-
-#para1{
-	border:1px  white;
-	border-width: 10px;
-	border-height: 10px;
-	column-width:left;
-}
-
-#column_2{
-	flex-grow:1;
-	height:100px;
-	text-align:right;
-}
-/* search bar under row class*/
-.search-bar{
-	overflow:auto;
-}
-
-/*footer class*/
-footer{
-	position:fixed;
-	left:0;
-	bottom:0;
-	width:100%;
-	background-color:white;
-	text-align:left;
-	overflow:hidden;
-}
-
+	.navbar{
+		background-color:black;
+	}
+	.navbar-brand{
+		color:white;
+	}
+	.navbar-brand:hover{
+		transform:scale(1.1);
+		color:white;
+	}
+	
+	.nav-link{
+		color:#ebd3f2;
+	}
+	
+	.nav-link:hover{
+		color:black;
+	}
+	
+	.nav-item:hover{
+		background-color:white;
+		color:black;
+	}
+	
+	
+	<!--hamburger menu-->
+		.navbar-collapse {
+			justify-content: flex-end;
+		}
+		.custom-toggler.navbar-toggler{
+			border-color: white;
+			color:black;
+		}
+		
+		
+		
+	<!--header-->
+	
+	.header {
+		background-image: url('delhi.jpg');
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
